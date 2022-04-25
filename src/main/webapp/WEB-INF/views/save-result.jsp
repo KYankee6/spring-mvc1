@@ -1,3 +1,4 @@
+<%@ page import="hello.servlet.domain.memeber.Member" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -6,6 +7,9 @@
 <body>
 성공
 <ul>
+     되나?
+    <%=((Member)request.getAttribute("member")).getId()%>
+
     <li>id=${member.id}</li>
     <li>username=${member.username}</li>
     <li>age=${member.age}</li>
